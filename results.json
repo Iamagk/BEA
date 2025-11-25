@@ -1,0 +1,25 @@
+{
+  "/Users/allenngeorge/tmp/emails/sample1.eml": {
+    "verdict": "SCAM",
+    "risk_score": 0.898,
+    "risk_level": "high",
+    "reasons": [
+      "Contains 1 link(s)",
+      "Suspicious keywords: verify, account, click, bank",
+      "Text classifier: NEGATIVE (score 0.98)"
+    ],
+    "details": {
+      "classifier_label": "NEGATIVE",
+      "classifier_score": 0.9828384518623352,
+      "links": [
+        "http://malicious.example.com/verify"
+      ],
+      "suspicious_words": [
+        "verify",
+        "account",
+        "click",
+        "bank"
+      ]
+    }
+  }
+}

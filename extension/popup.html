@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PhishGuard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>PhishGuard</h2>
+      <label for="sender">Sender (optional)</label>
+      <input id="sender" placeholder="sender@example.com" />
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="8" placeholder="Paste email or SMS text here..."></textarea>
+
+      <div class="controls">
+        <label>Risk threshold: <span id="thresholdLabel">0.5</span></label>
+        <input id="threshold" type="range" min="0" max="1" step="0.05" value="0.5" />
+      </div>
+
+      <button id="analyze">Analyze</button>
+      <div id="result" class="result"></div>
+      <button id="report" class="report">Report as scam</button>
+
+      <details>
+        <summary>About</summary>
+        <p>This prototype sends the text to a local backend for analysis. Do not paste sensitive credentials or private tokens.</p>
+      </details>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

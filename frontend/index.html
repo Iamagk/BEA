@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PhishGuard — Web UI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>PhishGuard</h1>
+
+      <div class="row">
+        <label>Sender (optional)</label>
+        <input id="sender" placeholder="sender@example.com" />
+      </div>
+
+      <div class="row">
+        <label>Paste message</label>
+        <textarea id="message" rows="8" placeholder="Paste email or SMS text here..."></textarea>
+      </div>
+
+      <div class="row">
+        <label>Or upload files (.eml / .txt)</label>
+        <input id="files" type="file" multiple />
+      </div>
+
+      <div class="row controls">
+        <button id="analyze">Analyze Text</button>
+        <button id="analyzeFiles">Analyze Files</button>
+        <button id="clear">Clear</button>
+      </div>
+
+      <div id="result" class="result"></div>
+
+      <details style="margin-top:12px"><summary>About this prototype</summary>
+        <p>Local prototype — do not paste private credentials. The model is a prototype and will have false positives/negatives.</p>
+      </details>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

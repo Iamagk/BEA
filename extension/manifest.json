@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "PhishGuard Prototype",
+  "version": "0.1.0",
+  "description": "Prototype AI phishing detector — paste messages to analyze risk.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
